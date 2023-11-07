@@ -7,6 +7,10 @@
 """
 
 valor = float(input('Digite o valor em metros: '))
+km = valor / 1000
+hm = valor / 100
+dam = valor / 10
+dm = valor * 10
 cm = valor * 100
 mm = valor * 1000
-print('R: {} metros equivale à {} centímetros e {} milímetros.'.format(valor, cm, mm))
+print('{}m equivale à: \n{}km \n{}hm \n{}dam \n{}dm \n{}cm \n{}mm'.format(valor, km, hm, dam, dm, cm, mm))
