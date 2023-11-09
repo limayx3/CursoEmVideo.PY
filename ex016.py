@@ -2,7 +2,7 @@
 #EX: SE DIGITAR 5.098656, MOSTRAR APENAS O 5.
 """
 1. Ler número real
-2. Exibir apenas parte inteira
+2. Exibir apenas parte inteira (da pra transformar o numero float e int também que exibirá o valor necessário)
 """
 import math
 valor = float(input('Digite um número com casas decimais: '))

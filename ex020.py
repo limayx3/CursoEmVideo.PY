@@ -14,4 +14,5 @@ a2 = input('Informe o nome do 2º aluno: ')
 a3 = input('Informe o nome do 3º aluno: ')
 a4 = input('Informe o nome do 4º aluno: ')
 lista = [a1, a2, a3, a4]
+#Da pra usar o "random.shuffle(lista)" também, além de poder colocar ele fora do print
 print('A ordem de apresentação dos trabalhos será:\n {}.'.format(random.sample(lista, k=4)))

@@ -9,4 +9,6 @@
 import math
 co = float(input('Informe o cateto oposto (apenas números): '))
 ca = float(input('Informe o cateto adjacente (apenas números): '))
+#Para calcular a HIpotenusa sem a importação da biblioteca, basta fazer isso e o valor de hi ser exibido como hipotenusa.
+#hi = (co ** 2 + ca ** 2) ** (1/2) 
 print('Para os catetos oposto {} e adjacente {}, valor da hipotenusa será {:.2f}.'.format(co, ca, math.hypot(ca, co)))

@@ -9,9 +9,10 @@
 
 import math
 angle = int(input('Informe o ângulo (apenas números): '))
-s = math.sin(angle)
-c = math.cos(angle)
-t = math.tan(angle)
+#Precisamos transformar em radianos para a conta vir certa
+s = math.sin(math.radians(angle))
+c = math.cos(math.radians(angle))
+t = math.tan(math.radians(angle))
 print('\nPara o ângulo {}, o seno é {:.2f} radianos.'.format(angle, s))
 print('Para o ângulo {}, o cosseno é {:.2f} radianos.'.format(angle, c))
 print('Para o ângulo {}, a tangente é {:.2f} radianos.\n'.format(angle, t))
