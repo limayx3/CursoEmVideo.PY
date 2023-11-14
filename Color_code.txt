@@ -1,0 +1,19 @@
+colors = {'clean': '\033[m',
+#limpar formatação
+
+'aware':'\033[1;31;43m',
+#ou negative - negrito, vermelho, fundo amarelo
+
+'positive':'\033[1;32;40m',
+#negrito, verde, fundo branco
+
+'cute':'\033[1;35;46m'
+#negrito, roxo, fundo ciano
+
+'important':'\033[4;36m'
+#ou destaque - sublinhado, ciano
+
+'black':'\033[7;30;47m'
+#invertido, branco, cinza
+
+
