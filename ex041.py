@@ -14,3 +14,22 @@
 4.4. Se idade == 20: Sênior
 4.5. Se idade >=21> Master
 """
+import datetime
+
+nasc = int(input('\nInforme o ano de seu nascimento: '))
+ano = datetime.date.today().year
+idade = ano - nasc
+
+#É POSSÍVEL COLOCAR DO 1º ELIF EM DIANTE APENAS A PARTE MAIOR (EX: IDADE < 15, NO OUTRO IDADE < 20...)
+if idade < 10:
+    print('Este nadador completa {} anos esse ano e competirá na categoria MIRIM.'.format(idade))
+elif idade >= 10 and idade < 15:
+    print('Este nadador completa {} anos esse ano e competirá na categoria JUVENIL/ INFANTIL.'.format(idade))
+elif idade >= 15 and idade < 20:
+    print('Este nadador completa {} anos esse ano e competirá na categoria JÚNIOR.'.format(idade))
+elif idade >= 20 and idade < 26:
+    print('Este nadador completa {} anos esse ano e competirá na categoria SÊNIOR.'.format(idade))
+else:
+    print('Este nadador completa {} anos esse ano e competirá na categoria MASTER.'.format(idade))
+
+print('\n\033[4;36;47mIndependente da categoria, se dedique, treine bastante e boa sorte!\033[m\n')

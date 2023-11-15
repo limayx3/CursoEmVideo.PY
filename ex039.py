@@ -12,3 +12,18 @@
 5.2. Se 18: Informar que precisa se alistar esse ano
 5.3. Se >=19: Informar que já passou a data de alistamento e quanto passou
 """
+from datetime import date
+
+nasc = int(input('Em qual ano nasceu? '))
+ano = date.today().year
+idade = ano - nasc
+
+if idade == 18:
+    print('Nesse ano ({}) você completou ou completa 18 anos, portanto vá se alistar, calabrezo! Você só tem até 30 de junho!'.format(ano))
+elif idade < 18:
+    falta = 18 - idade
+    print('Você ainda é garotinho juvenil, ainda não tem a idade necessária.')
+    print('Mas fique atento, leite com pêra, você se alistará em {} ano(s), em {}.'.format(falta, ano + falta))
+elif idade > 18:
+    passou = idade - 18
+    print('Você passou {} ano(s) da idade de se alistar, que foi em {}. Espero que tenha feito o procedimento correto, pitango.'.format(passou, ano - passou))

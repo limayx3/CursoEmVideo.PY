@@ -17,7 +17,7 @@ período = int(input('Em quantos meses gostaria de quitar essa dívida? '))
 prestação = casa / período
 percentil = salário * 0.3
 
-if prestação >= percentil:
+if prestação > percentil:
     print('Infelizmente o valor das parcelas é {}R${:.2f}{} e ultrapassa o percentual limite de seu salário. Empréstimo {}NEGADO{}.'.format(color['aware'], prestação, color['clean'], color['aware'], color['clean']))
     print('{}Considere aumentar a quantidade de meses para a quitação do financiamento e tente novamente.{}'.format(color['black'], color['clean']))
 else:
