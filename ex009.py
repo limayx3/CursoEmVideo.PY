@@ -4,7 +4,6 @@
 2. Calcular sua tabuada.
 3. Exibir sua tabuada
 """
-
 n = int(input('Digite um número inteiro: '))
 print('A tabuada de {} é:\n{} x 1 = {}'.format(n, n, n*1))
 print('{} x 2 = {}'.format(n, n*2))

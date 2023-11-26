@@ -1,0 +1,7 @@
+#MOSTRAR NA TELA UMA CONTAGEM REGRESSIVA PARA O ESTOURO DE FOGOS DE ARTIFÍCIO, DE 10 À 0, COM PAUSA DE 1 SEGUNDO ENTRE OS NÚMEROS
+
+import time
+for c in range(10, -1, -1):
+    print(c)
+    time.sleep(1)
+print('BOOOOM!')
