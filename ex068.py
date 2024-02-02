@@ -9,7 +9,7 @@ player1 = player2 = count = soma = 0
 while True:
     print('=' * 100)
     player1 = int(input('Escolha um número inteiro de 0 à 10: '))
-    player2 = random.randint(0,10)
+    player2 = random.randint(0,11)
     soma = player1 + player2
     escolha = str(input('"p" para par ou "i" para ímpar? ')).strip().lower()[0]
     for c in range (1, 4):

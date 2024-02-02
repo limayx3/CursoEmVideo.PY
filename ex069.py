@@ -13,11 +13,10 @@ while True:
     sexo = str(input('Informe o sexo [F/M]: ')).strip().upper()[0]
     if idade > 18:
         maior += 1
-    elif sexo == 'M':
+    if sexo == 'M':
         homem += 1
-    else:
-        if idade < 20:
-            mulher += 1
+    if idade < 20 and sexo == 'M':
+        mulher += 1
 
 print('=' * 50)
 print(f'''Cadastro finalizado com sucesso.\nVocê adicionou {maior} maiores de idade, {homem} homem(ns)\ne {mulher} mulher(es) com menos de 20 anos.''')
