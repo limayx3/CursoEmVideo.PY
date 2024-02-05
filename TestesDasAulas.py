@@ -54,3 +54,15 @@ dividido = frase.split()
 print('15. ', dividido)
 print('16. ', '='.join(dividido))
 """
+
+
+pessoas = ('Nathália', 'Jane', 'Vitor', 'Nana', 'Peach')
+for count in range(0, len(pessoas)):
+    print(f'A - Vamos visitar o/a: {pessoas[count]}')
+
+for amado in pessoas:
+    print(f'B - Vou visitar: {amado}')
+
+for pos, amado in enumerate(pessoas):
+    print(f'Vou visitar o/a {amado} em {pos}º lugar.')
+
