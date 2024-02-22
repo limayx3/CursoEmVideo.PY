@@ -1,0 +1,2 @@
+#Ler nome e 2 notas de vários alunos, guardando tudo em uma lista composta: [listona com tudo[listinha com nome e [listinha com 2 notas]][listinha com nome e [listinha com 2 notas]]...]
+#No fim mostrar tabela com ordem numérica de insersão, nomes e médias, também permitir mostrar a nota de cada aluno, dando a opção 999 para parar.
