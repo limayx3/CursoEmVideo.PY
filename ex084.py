@@ -21,16 +21,14 @@ while True:
     if continuar in 'Nn':
         break
 
-print(f'Após cadastrarmos {cont} pessoa(s), vimos que:')
+print(f'Após cadastrarmos {cont} pessoa(s), vimos que:')                       #A
 
-print(f'O maior dos pesos é {pesomax}kg, da(s) pessoa(s): ', end='')
+print(f'O maior dos pesos é {pesomax}kg, da(s) pessoa(s): ', end='')            #B
 for c in range(0, len(cadastros)):
     if cadastros[c][1] == pesomax:
         print(f'{cadastros[c][0]}', end='... ')
 
-print(f'\nJá o menor peso observado, de {pesomin}kg, pertence à: ', end='')
+print(f'\nJá o menor peso observado, de {pesomin}kg, pertence à: ', end='')    #C
 for c in range(0, len(cadastros)):
     if cadastros[c][1] == pesomin:
         print(f'{cadastros[c][0]}', end='... ')
-
-

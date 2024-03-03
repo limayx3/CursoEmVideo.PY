@@ -6,10 +6,10 @@ num = 0
 
 for c in range (0, 3):
     for n in range(0, 3):
-        num = int(input('Informe o valor: '))
+        num = int(input(f'Informe o valor para a posição [{c}, {n}]: '))
         matriz[c].append(num)
 
 for c in range(0, 3):
     for n in range (0, 3):
-        print(f'[ {matriz[c][n]} ]', end=' ')
-
+        print(f'[{matriz[c][n]:^5}]', end=' ')
+    print()
