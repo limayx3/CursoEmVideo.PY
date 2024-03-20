@@ -26,3 +26,4 @@ elif média <= 0.5:
     print(f'Tá na hora de repensar o treinamento ou substituí-lo, decepcionante ter {soma} gol(s) e média {média} por partida.')
 else:
     print(f'Com total de {soma} gol(s) e média de {média} gol(s) por partida, temos um bom desempenho!')
+    
