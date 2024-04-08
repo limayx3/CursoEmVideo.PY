@@ -7,7 +7,7 @@ gols = []
 soma = gol = média = 0
 
 jogador['nome'] = str(input('Nome do jogador: '))
-jogador['partidas'] = int(input('Jogou quantas partidas? '))
+jogador['partidas'] = int(input(f'{jogador["nome"]} jogou quantas partidas? '))
 for p in range(0, jogador['partidas']):
     gol = int(input(f'Quantos gols feitos na {p+1}º partida? '))
     soma += gol
@@ -17,7 +17,14 @@ jogador['totgols'] = soma
 média = soma / jogador['partidas']
 
 print('='*30)
-print(f'O jogador {jogador['nome']} jogou {jogador['partidas']} jogos neste campeonato, onde:')
+print(jogador)
+
+print('='*30)
+for k, v in jogador.items():
+    print(f'A key {k} tem valor {v}')
+
+print('='*30)
+print(f'O jogador {jogador["nome"]} jogou {jogador["partidas"]} jogos neste campeonato, onde:')
 for c in range(0, jogador['partidas']):
     print(f'Na {c+1}ª partida, marcou {jogador['gols'][c]} gol(s).')
 if média >= 2.5:
