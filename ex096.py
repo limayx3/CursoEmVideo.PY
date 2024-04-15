@@ -1,7 +1,7 @@
 #Criar uma função área() que receba largura e comprimento de um terreno retangular e mostre a área do terreno.
 
-def área(b, h):
-    a = b * h
+def área(base, altura):
+    a = base * altura
     print(f'A área do terreno é {a:.2f}m²')
 
 
